@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: rgb(180, 180, 180);
+    padding: 10px 2% 30px 2%;
+}
+
+.logo1 {
+    float: left;
+    width: 160px;
+    height: 70px;
+    background-image: url(../assets/logo-social.png);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color: purple; */
+}
+
+.logo2 {
+    float: right;
+    width: 160px;
+    height: 70px;
+    background-image: url(../assets/logo-social.png);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background: green; */
+}
+
+.cover-form {
+    width: 100%;
+
+}
+
+.bg {
+    position: relative;
+    height: 560px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../assets/bg-form.jpg);
+}
+
+.form-container {
+    position: absolute;
+    right: 0;
+    /* float: right; */
+    margin-right: 40px;
+    width: 400px;
+    height: 105%;
+    top: -2.5%;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 1px 1px 3px 3px rgba(180, 180, 180, 0.6);
+}
+
+.form-container h2 {
+    padding: 20px 15px;
+    color: black;
+    font-weight: normal;
+    font-size: 18px;
+    background-color: rgb(230, 230, 230);
+}
+
+.form-container form {
+    margin-top: 8px;
+    padding: 10px;
+}
+
+.form-container form input {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccc;
+    line-height: 45px;
+    padding-left: 10px;
+}
+
+.form-container form p {
+    font-size: 14px;
+    /* margin-bottom: 5px; */
+    color: #525252;
+}
+
+.first {
+    margin-top: 10px;
+}
+
+.last {
+    margin-top: 30px;
+}
+
+.form-container form .submit {
+    background: #033c50;
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    font-size: 25px;
+    height: 50px;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.chamada {
+    top: -50px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 2px 0 1px 0px rgb(243, 243, 243);
+}
+
+.chamada .container {
+    background-color: #214b72;
+    padding: 40px;
+}
+
+.chamada h2 {
+    display: inline-block;
+    height: 20px;
+    width: 96%;
+    max-width: 700px;
+    color: white;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.chamada p {
+    margin-top: 8px;
+    font-weight: lighter;
+    font-size: 13px;
+    color: white;
+}
+
+.flex-mosaico {
+    display: flex;
+}
+
+.item1-mosaico {
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+}
+
+.item2-mosaico {
+    background-color: #326ba1;
+    color: white;
+    padding: 60px 40px;
+    width: 40%;
+}
+
+footer {
+    background-color: rgb(180, 180, 180);
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+@media screen and (max-width: 510px) {
+
+    .logo1,
+    .logo2 {
+        display: inline-block;
+        float: none;
+        margin-top: 10px;
+    }
+
+    header {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .bg {
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .form-container {
+        width: 96%;
+        height: auto;
+        max-width: 400px;
+        position: static;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flex-mosaico {
+        display: inline-block;
+    }
+
+    .item1-mosaico {
+        padding-top: 80%;
+        width: 100%;
+    }
+
+    .item2-mosaico {
+        text-align: center;
+        width: 100%;
+    }
+}
